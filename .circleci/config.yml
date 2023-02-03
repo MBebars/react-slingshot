@@ -6,6 +6,7 @@ jobs:
       - image: cimg/node:19.5.0
     steps:
       - checkout
+      - run: npm i
       - run: npm run lint
 
   test:
